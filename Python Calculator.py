@@ -31,6 +31,10 @@ while on:
 
         print("Arealet av trekanten er: " + str(areal))
 
+    elif valg == 0:
+
+        on = False
+
     else:
         print("\nVelg et av alternativene over!")
     
