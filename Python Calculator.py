@@ -21,6 +21,8 @@ while on:
 
         print("\nArealet er: " + str(areal))
         print("Omkretsen er: " + str(omkrets))
+        sleep(2)
+
 
     elif valg == 2:
             
@@ -30,6 +32,8 @@ while on:
         areal = (grunnlinje * høyde) / 2
 
         print("Arealet av trekanten er: " + str(areal))
+        sleep(2)
+
 
     elif valg == 0:
 
@@ -37,5 +41,4 @@ while on:
 
     else:
         print("\nVelg et av alternativene over!")
-    
-    sleep(2)
+        sleep(2)

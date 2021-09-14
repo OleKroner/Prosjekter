@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+}
+
+.Title {
+  display: flex;
+
+  margin: 0px;
+  font-size: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 25px;
+  background-color: red;
+}
+
+.navlink {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.navlink ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.navlink li {
+  display: inline;
+  padding: 2%;
+}
+
+.navlink a:hover {
+    text-decoration: underline;
+}
+
+.navlink a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.boks {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 2px green solid;;
+  width: 760px;
+  height: 550px;
+  padding: 5px;
+}
+
+.boks section {
+  background-color: green;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+}
