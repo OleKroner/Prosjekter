@@ -48,6 +48,51 @@ body {
     text-decoration: none;
 }
 
+.registerForm {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+  background-color: lightgray;
+  width: 450px;
+  height: 350px;
+  padding: 0px;
+}
+
+.registerForm h1 {
+  width: 100%;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: 5px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0px;
+  background-color: darkgray;
+}
+
+.registerForm form {
+  width: 100%;
+  margin: 10px;
+}
+
+.registerForm input {
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  margin: 5px;
+  padding: 6px;
+  box-sizing: content-box;
+}
+
+.registerForm input[type="submit"]{
+  background-color: lightgreen;
+}
+
 .boks {
   display: flex;
   justify-content: space-around;
