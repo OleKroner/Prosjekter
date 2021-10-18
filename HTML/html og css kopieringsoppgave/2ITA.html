@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Åssiden VGS</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="navobject">Åssiden VGS</li>
+            <li class="navobject"><a href="index.html">Om IM</a></li>
+            <li class="navobject"><a href="2ITA.html">2ITA</a></li>
+        </ul>
+    </nav>
+    <div class="innhold titel">
+        <section>
+            <h1>2ITA</h1>
+        </section>
+        <section>
+            <img src="https://viken.no/handlers/bv.ashx/id3ed81e1-35f1-417e-9bd1-0c8b29a49667/w1200/q25157/kd2267ca00a7a/im3.jpg" alt="Image not Found">
+        </section>
+    </div>
+    <div class="innhold center">
+        <section class="elevliste">
+            <form action="" autocomplete="off">
+                <h2 class="elevliste">Legg til ny elev</h2>
+                <label for="navn">Navn:</label><br>
+                <input class="elevliste" id="navn" name="navn" type="text" required><br>
+                <label for="etternavn">Etternavn:</label><br>
+                <input class="elevliste" id="etternavn" name="etternavn" type="text" required><br>
+                <label for="alder">Alder:</label><br>
+                <input class="elevliste" id="alder" name="alder" type="text" pattern="[0-9.]" required><br>
+                <button type="button" onclick="addToTable()">Legg til</button>
+            </form>
+        </section>
+        <section class="elevliste">
+            <h2>Elevliste</h2>
+            <table id="myTable">
+                <tr>
+                    <th>Navn</th>
+                    <th>Etternavn</th>
+                    <th>Alder</th>
+                </tr>
+                <tr>
+                    <td>Ola</td>
+                    <td>Nordmann</td>
+                    <td>17</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div class="innhold images">
+        <section>
+          
+        </section>
+        <section>
+          
+        </section>
+    </div>
+    <script>
+        function addToTable() {
+            var navn = document.getElementById("navn").value;
+            var etternavn = document.getElementById("etternavn").value;
+            var alder = document.getElementById("alder").value;
+            if (navn != "" && etternavn != "" && alder != "" && 110 > alder && alder > 0) {
+                var table = document.getElementById("myTable");
+                var row = table.insertRow();
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = navn;
+                cell2.innerHTML = etternavn;
+                cell3.innerHTML = alder;
+                document.getElementById("navn").value = "";
+                document.getElementById("etternavn").value = "";
+                document.getElementById("alder").value = "";
+                console.log(typeof alder)
+            }
+        }
+    </script>
+</body>
+</html>

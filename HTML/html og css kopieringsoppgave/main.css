@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.navbar ul {
+    margin: 0;
+    list-style: none;
+    width: 725px;
+    text-align: start;
+}
+
+.navbar li {
+    display: inline;
+    padding: 10px;
+}
+
+.innhold {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: auto;
+    height: 200px;
+}
+
+section {
+    width: 300px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.images section {
+    text-align: center;
+}
+
+.titel {
+    text-align: center;
+}
+
+.titel p {
+    margin: 2px;
+}
+
+.titel h1 {
+    margin: 2px;
+    font-weight: bolder;
+}
+
+.center {
+    background-color: goldenrod;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th, td {
+    width: 50%;
+    text-align: start;
+}
+
+.elevliste {
+    font-family: "Times New Roman", Times, serif;
+}
+
+input[type=text] {
+    margin-bottom: 10px;
+}

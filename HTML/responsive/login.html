@@ -19,16 +19,52 @@
                 <h1>Login</h1>
             </section>
             <section>
-                <input type="text" class="Inputfield" name="" placeholder="Username">
+                <input type="text" class="Inputfield" id="Username" placeholder="Username">
+            </section>
+            <section id="emailSection">
+
             </section>
             <section>
-                <input type="password" class="Inputfield" name="" placeholder="Password">
+                <input type="password" class="Inputfield" id="Password" placeholder="Password">
+            </section>
+            <section id="confirmPasswordSection">
+
             </section>
             <section>
-                <input type="submit" class="submit" name="" value="Login">
+                <input type="submit" class="submit" id="loginButton" name="" value="Login">
             </section>
+            <script>
+                var register = 0;
+                function registerAccount() {
+                    if (register == 0) {
+                        document.getElementById("loginButton").value = "Register";
+                        //const element = document.getElementById("Username");
+                        //element.remove();
+                        var email = document.createElement("INPUT");
+                        email.setAttribute("type", "text");
+                        email.setAttribute("class", "Inputfield");
+                        email.setAttribute("id", "Email");
+                        email.setAttribute("placeholder", "Email");
+                        document.getElementById("emailSection").appendChild(email);
+                        var comfirmPassword = document.createElement("INPUT");
+                        comfirmPassword.setAttribute("type", "password");
+                        comfirmPassword.setAttribute("class", "Inputfield");
+                        comfirmPassword.setAttribute("id", "confirmPassword");
+                        comfirmPassword.setAttribute("placeholder", "Confirm Password");
+                        document.getElementById("confirmPasswordSection").appendChild(comfirmPassword);
+                        register = 1;
+                    }
+                    else {
+                        document.getElementById("Email").remove();
+                        document.getElementById("confirmPassword").remove();
+                        document.getElementById("loginButton").value = "Login";
+                        register = 0;
+                    }
+                }
+            </script>
             <section>
-                <a href="register.html" class="registrerLink">Create a new account</a>
+                <!--<a href="register.html" class="registrerLink">Create a new account</a> !-->
+                <button type="button" onclick="registerAccount()">Create a new account</button>
             </section>
         </main>
       </form>

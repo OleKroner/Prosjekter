@@ -133,7 +133,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  border: 2px green solid;;
+  border: 2px green solid;
   width: 55%;
   padding: 5px;
 }
